@@ -1,10 +1,13 @@
 html, body {
     min-height: 100%;
+    background-color: black;
 }
-div{
-    margin:20%;
+.div{
+    background-color: black;
     display: grid;
-    align-items: start;
+    justify-items: center;
+    margin-top: 20%;
+    color: aliceblue;
 }
 footer{
 background: #ffab62;
