@@ -15,17 +15,17 @@ let numeroAleatorio = 0
 function contaCartas(){
     geraAleatorio()
     
-    if(soma === 21 || (soma>21 && texto == "Jackpot")) {
+    if(soma === 21 || (soma>21 && texto == "Blackjack")) {
         
         paraEl.style.color = 'green'
-        texto == "Jackpot" ? comecarJogo() : texto = "Jackpot"
+        texto == "Blackjack" ? comecarJogo() : texto = "Blackjack"
         paraEl.textContent = texto
     }
     else if (soma < 21) {
         texto = "Tire mais uma carta"
         paraEl.textContent = texto
     }
-    else if( soma>21 && texto != "Jackpot"){
+    else if( soma>21 && texto != "Blackjack"){
         paraEl.style.color = 'red'
         texto =="Você perdeu, tente de novo" ? comecarJogo() :texto = "Você perdeu, tente de novo"
         paraEl.textContent = texto
